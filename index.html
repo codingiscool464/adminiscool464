@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Found!</title>
+  <style>
+    body {
+      background: #0b0e14;
+      color: #e5e5e5;
+      font-family: "Inter", Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #00d1ff;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background: #00d1ff;
+      color: #0b0e14;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.25s ease;
+    }
+
+    button:hover {
+      background: #009ecf;
+    }
+
+    img {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 12px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Congrats! You found admin! Press button to reveal admin panel.</h1>
+  <button id="revealBtn">Reveal Now</button>
+  <img id="rickroll" src="http://media1.tenor.com/m/x8v1oNUOmg4AAAAd/rickroll-roll.gif" alt="Rickroll GIF">
+
+  <script>
+    const button = document.getElementById('revealBtn');
+    const rickroll = document.getElementById('rickroll');
+
+    button.addEventListener('click', () => {
+      rickroll.style.display = 'block';
+      button.style.display = 'none';
+    });
+  </script>
+
+</body>
+</html>
